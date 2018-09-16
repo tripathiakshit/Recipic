@@ -100,9 +100,9 @@ function loadRecipeData(res) {
         // Create div to hold recipe
         let recipeContainer = document.createElement("div");
         recipeContainer.classList.add("recipe");
-        // recipeContainer.addEventListener("click", () => {
-        //     location.href = element.recipe.url;
-        // });
+        recipeContainer.addEventListener("click", () => {
+            location.href = element.recipe.url;
+        });
 
         // Create recipe image
         let recipeImage = document.createElement("img");
