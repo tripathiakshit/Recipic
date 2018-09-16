@@ -118,3 +118,14 @@ main h2 {
   display: flex;
   flex-flow: column wrap;
 }
+
+#modal #modalWindow #pred_select button {
+  background: #CFD8DC;
+  border: solid 2px #212121;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50px;
+  margin: 0.25rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: 'Rubik';
+}
