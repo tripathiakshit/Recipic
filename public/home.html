@@ -15,14 +15,18 @@
 </head>
 
 <body>
+    <div id="modal">
+        <div id="modalWindow">
+            <h2>Select your ingredient</h2>
+            <div id="pred_select"></div>
+        </div>
+    </div>
     <h1>Recipic</h1>
     <aside>
         <h2>My Ingredients</h2><br>
-
         <div id="uploadedImages"></div>
         <input id="ml_image_upload" type="file" accept="image/*;capture=camera" onchange="encodeImageFileAsURL(this)">
         <label for="ml_image_upload"><i class="fas fa-plus"></i></label>
-
     </aside>
     <main>
         <h2>My Recipes</h2>

@@ -93,3 +93,28 @@ main h2 {
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
   display: inline-block;
 }
+
+#modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+#modal #modalWindow {
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 1rem;
+  background: #455A64;
+  padding: 1rem 1.5rem;
+}
+
+#modal #modalWindow h2 {
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+}
