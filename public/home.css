@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,700|Source+Sans+Pro:400,400i");
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 700;
+  padding: 2rem 0;
+  margin: 0;
+  text-indent: 1.5rem;
+  background: #ffcbba;
+  color: #212121;
+}
+
+aside {
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 1rem;
+  background: #455A64;
+  padding: 1rem 1.5rem;
+}
+
+aside h2 {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+aside #uploadedImages {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow-x: scroll;
+  display: flex;
+  margin: 0 0 1rem 0;
+  height: 20vh;
+}
+
+aside #uploadedImages img {
+  border-radius: 20px;
+  border-right: solid 5px transparent;
+  object-fit: cover;
+  width: 20vh;
+  height: 20vh;
+  display: inline-block;
+}
+
+aside #uploadedImages img:last-child {
+  border-right: 0;
+}
+
+main {
+  background: white;
+  padding: 0.5rem;
+}
+
+main h2 {
+  text-indent: 1rem;
+  color: #212121;
+}
+
+/* Hack to hide the input in my ingredients */
+#ml_image_upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#ml_image_upload+label {
+  line-height: 0;
+  padding: 1rem;
+  border-radius: 500px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #ff5722;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
